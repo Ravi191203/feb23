@@ -1,0 +1,25 @@
+h2{
+    color:rgb(0, 153, 255);
+}
+body{
+    background-color:lightblue;
+    border: 2px solid black;
+    padding: 5%;
+}
+img{
+    border-radius:20%;
+    padding: 5%;
+    height: 100px;
+    width: 100px;
+}
+th{
+    padding: 0.2%;
+    border: 2px solid black;
+}
+td{
+    padding: 0.2%;
+}
+table{
+    border:2px solid black;
+}
+
