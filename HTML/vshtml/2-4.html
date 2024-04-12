@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon cart</title>
+    <link rel="stylesheet" href="/asset/CSS/2-4css.css" />
+</head>
+<body><center>
+    <button class="r" onclick="cart++;
+    document.querySelector('#cart-summary').innerText = `🛒 Your bag has ${cart} items`;">🛒 Add to cart</button>
+    <button class="g" onclick="cart--;
+    document.querySelector('#cart-summary').innerText = `💕 Your bag has ${cart} items moved to Wishlist`;">💕 Move to wishlist</button>
+    <button class="s" onclick="cart+=2;
+    document.querySelector('#cart-summary').innerText = `🎇 Your bag has ${cart} items`;">🎇 Add 1+1 Sale item</button>
+    <h2 id="cart-summary"></h2>
+</center>
+    <script src="/JS/2-4js.js"></script>
+</body>
+</html>
