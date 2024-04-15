@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <title>Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .calculator {
+        background-color: aquamarine;
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      border: 2px solid black;
+    }
+
+    .calculator input {
+        border-radius: 10px;
+      width: 90%;
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+
+    .calculator button {
+        font-size: large;
+        border-radius: 10px; 
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+    .u{
+        padding: 50px;
+        background-color: black;
+        color: aliceblue;
+    }
+    button:hover{
+        background-color: black;
+        color: aliceblue;
+        border: 2px solid white;
+    }
+  </style>
+</head>
+<body>
+  <div align="center" class="calculator">
+    <h1>Calculator</h1>
+    <input type="text" id="display">
+    <button onclick="cleare()">C</button><br>
+    <button onclick="add(1)">1</button>
+    <button onclick="add(2)">2</button>
+    <button onclick="add(3)">3</button>
+    <button onclick="add('+')">+</button><br>
+
+    <button onclick="add(4)">4</button>
+    <button onclick="add(5)">5</button>
+    <button onclick="add(6)">6</button>
+    <button onclick="add('-')">-</button><br>
+    <button onclick="add(7)">7</button>
+    <button onclick="add(8)">8</button>
+    <button onclick="add(9)">9</button>
+    
+    <button onclick="add(0)">0</button><br>
+    <button onclick="add('*')">*</button>
+    <button onclick="add('.')">.</button>
+    <button onclick="add('/')">/</button>
+    <button class="u" onclick="calculate()">=</button>
+    
+  </div>
+
+  <script>
+    function add(value) {
+      var display = document.getElementById("display");
+      display.value += value;
+    }
+    function cleare() {
+        var display = document.getElementById("display");
+        display.value = " ";
+}
+    
+    function calculate() {
+      var display = document.getElementById("display");
+      var result = eval(display.value);
+      display.value = result;
+    }
+  </script>
+</body>
+</html>
